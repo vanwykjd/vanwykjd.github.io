@@ -1,0 +1,108 @@
+#traits {
+  position: relative;
+  background: #222;
+  overflow: visible;
+  hieght: 100%;
+  width: 100%;
+  
+  div div {
+    span {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      @media screen and (min-width: 767px) {
+        margin-top: .75rem;
+        margin-bottom: .75rem
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    span:active {
+      border: solid 5px #FFF;
+    }
+
+    h3 {
+      font-family: 'Roboto Condensed', sans-serif;
+      text-transform: uppercase;
+      color: #FFF;
+    }
+
+    &:nth-child(1) {
+      span figure {
+        background-image: url('../images/Asset 1.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(2) {
+      span figure  {
+        background-image: url('../images/Asset 2.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(3) {
+      span figure  {
+        background-image: url('../images/Asset 6.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(4) {
+      span figure  {
+        background-image: url('../images/Asset 7.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  h3 {
+    margin: 0px;
+    @media screen and (max-width: 767px) {
+       font-size: .75rem;
+      }
+     @media screen and (max-width: 1200px) {
+       font-size: 1rem;
+      }
+  }
+
+  h4 {
+    color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    text-transform: uppercase; 
+    @media screen and (min-width: 767px) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: .7rem;
+    }
+    @media screen and (min-width: 992px) {
+       margin-top: .75rem;
+       margin-bottom: 0px;
+       font-size: .6rem;
+      }
+     @media screen and (min-width: 1200px) {
+       margin-top: 1rem;
+       font-size: .7rem;
+      }
+  }
+
+  @media screen and (min-width: 767px) {
+    position: absolute;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 20px 40px 40px 40px;
+  } 
+}
+

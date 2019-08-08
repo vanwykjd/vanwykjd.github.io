@@ -1,0 +1,198 @@
+.page .about-img {
+  margin-top: 200vh;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #f8f8f8;
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  -o-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+  z-index: 10;
+}
+
+.about-img div {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:  url('../images/AboutNorm.png');
+}
+
+#about {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  z-index: 11!important;
+  overflow: visible;
+  background: #F1F1F1;
+  padding-top: 60px;
+  
+  .page-header {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+    @media (min-width: 767px) {
+      padding: 0px;
+      margin-bottom: 60px;
+    }
+    
+    .about-txt-top, .about-txt-bottom {
+      position: relative;
+      color: #1C7FC5;
+      font-family: 'Raleway', sans-serif;
+      line-height: 48px;
+      font-size: 62px;
+      font-weight: 900;
+      height: 84px;
+      text-align: center;
+    }
+    
+    .about-txt-top {
+      padding: 36px 36px 0px 36px;
+      margin-bottom: .2rem;
+      width: 162.9px;
+      
+      @media (min-width: 767px) {
+        line-height: 55px;
+        font-size: 72px;
+        font-weight: 900;
+        height: 91px;
+        padding: 36px 36px 0px 36px;
+        margin-bottom: .4rem;
+        width: 177.6px;
+      }
+    }
+
+    .about-txt-bottom {
+      padding: 0px 36px 36px 36px;
+      width: 210.78px;
+      
+      @media (min-width: 767px) {
+        line-height: 55px;
+        font-size: 72px;
+        font-weight: 900;
+        height: 91px;
+        padding: 0px 36px 36px 36px;
+        width: 229.8px;
+      }
+    }
+
+    .about-txt-top::before {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 60px;
+      top: 0;
+      left: 0;
+      background: #222;
+    }
+
+    .about-txt-top::after {
+      position: absolute;
+      content: '';
+      height: 60px;
+      width: 6px;
+      top: 0;
+      left: 0;
+      background: #222;
+    }
+
+    .about-txt-bottom::before {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 60px;
+      bottom: 0;
+      right: 0;
+      background: #222;
+    }
+
+    .about-txt-bottom::after {
+      position: absolute;
+      content: '';
+      height: 60px;
+      width: 6px;
+      bottom: 0;
+      right: 0;
+      background: #222;
+    }
+  }
+  
+  #about-left {
+    padding: 0px 40px 60px 40px;
+    @media (min-width: 767px) {
+      padding: 0px;
+      p {
+        color: #606060;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  section {
+    &:nth-child(1) {
+      position: absolute;
+      width: 100vw;
+      overflow: hidden;
+      content: ' ';
+      z-index: 10!important;
+      background: #F1F1F1;
+    }
+    &:nth-child(2) {
+      position: relative;
+      display: block;
+      height: auto;
+      width: 100vw;
+      background: none;
+      h2 {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        span {
+          font-family: 'Playfair Display', serif;
+          font-weight: 300;
+        }
+        @media screen and (min-width: 480px) {
+           font-size: 28px;
+        }
+        @media screen and (min-width: 992px) {
+           font-size: 1.75rem;
+        }
+        @media screen and (min-width: 1200px) {
+           font-size: 2rem;
+        }
+        @media screen and (min-width: 1600px) {
+           font-size: 38px;
+        }
+      }
+    }
+     
+    &:nth-child(3) {
+      position: absolute;
+      content: ' ';
+      display: block;
+      width: 100vw;
+      background: #F1F1F1;
+      left: 0;
+      overflow: hidden;
+      z-index: 10!important;
+    }
+  }
+  
+  @media screen and (min-width: 767px) {
+    padding-top: 10vh;
+    padding-bottom: 60px;
+  }
+  
+}

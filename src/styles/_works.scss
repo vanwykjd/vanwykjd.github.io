@@ -1,0 +1,171 @@
+#works {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  z-index: 9;
+  background: red;
+  overflow: visible;
+
+  section {
+    height: 100%;
+    padding-top: 60px;
+      @media screen and (min-width: 767px) {
+        padding: 10vh 40px 60px 40px;
+      }
+    
+      @media screen and (min-width: 1600px) {
+        padding: 10vh 55px 60px 55px;
+      }
+      h1 {
+        color: #fff;
+        margin-bottom: 36px;
+        span {
+          
+          &:nth-child(1) { 
+            display: block;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 900;
+            font-size: 1.4444444444444444rem;
+            line-height: 1.2;
+          }
+          &:nth-child(2) {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 1.6111111111111112rem;
+            line-height: 1.1;
+          }
+        }
+
+        @media screen and (min-width: 767px) {
+          span {
+            width: 158px;
+            &:nth-child(1) {
+              font-size: 26px;
+              height: 26px;
+              line-height: 1.5rem;
+              margin-bottom: 3px;
+            }
+            &:nth-child(2) {
+              font-size: 30px;
+              height: 27px;
+              line-height: 27px;
+            }
+          }
+        }
+        
+        @media screen and (min-width: 1200px) {
+          span {
+            width: 317px;
+            &:nth-child(1) {
+              font-size: 34px;
+              height: 34px;
+              line-height: 1.75rem;
+            }
+            &:nth-child(2) {
+              font-size: 38px;
+              height: 35px;
+              line-height: 35px;
+            }
+          }
+        }
+        @media screen and (min-width: 1600px) {
+          span {
+            width: 385px;
+            &:nth-child(1) {
+              font-size: 42px;
+              height: 42px;
+              line-height: 2rem;
+              margin-bottom: 5px;
+            }
+            &:nth-child(2) {
+              font-size: 45px;
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    
+      h2 {
+        font-size: 26px;
+        line-height: 1;
+        margin-bottom: .5em;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        -webkit-transition: color 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+        -moz-transition: color 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+        transition: color 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+        span {
+          font-family: 'Playfair Display', serif;
+          font-weight: 300;
+        }
+        @media screen and (min-width: 767px) {
+           font-size: 20px;
+        }
+        @media screen and (min-width: 1200px) {
+           font-size: 24px;
+        }
+        @media screen and (min-width: 1600px) {
+           font-size: 28px;
+        }
+      }
+    
+      h3 {
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: .5em;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        @media screen and (min-width: 767px) {
+           font-size: 14px;
+        }
+        @media screen and (min-width: 1200px) {
+           font-size: 18px;
+        }
+        @media screen and (min-width: 1600px) {
+           font-size: 22px;
+        }
+      }
+    
+    p {
+      color: #1890ff;
+      font-weight: 500;
+      text-align: left;
+      font-size: 14px;
+       @media screen and (min-width: 767px) {
+           font-size: 12px;
+        }
+        @media screen and (min-width: 1200px) {
+           font-size: 14px;
+        }
+        @media screen and (min-width: 1600px) {
+           font-size: 18px;
+        }
+    }
+    
+    a {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      padding-bottom: 5px;
+      letter-spacing: .1em;
+      text-align: center;
+      border-bottom-style: solid;
+      border-width: 2px;
+      border-color: coral;
+      color: coral;
+      @media screen and (min-width: 767px) {
+         font-size: 12px;
+      }
+      @media screen and (min-width: 1200px) {
+         font-size: 20px;
+      }
+      @media screen and (min-width: 1600px) {
+         font-size: 24px;
+      }
+    }
+  }
+}

@@ -1,16 +1,47 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `JOSH VAN WYK`,
+    description: `FULL-STACK DEVELOPER`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-antd',
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`400`, `500`, `600`]
+          },
+          {
+            family: `Raleway`,
+            variants: [`300`, `700`, `900`]
+          },
+          {
+            family: 'Roboto Condensed',
+          },
+          {
+            family: 'IM Fell Great Primer',
+            variants: [`400i`]
+          },
+          {
+            family: 'Playfair Display',
+            variants: [`400i`]
+          },
+          {
+            family: 'BenchNine',
+            variants: [`300`]
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,

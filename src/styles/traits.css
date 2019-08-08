@@ -1,0 +1,243 @@
+.trait {
+  width: 100vw;
+  height: 25vh;
+  text-align: center;
+}
+
+.traits div span {
+  font-family: 'BenchNine', sans-serif;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.traits div span.icon {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    position: relative;
+}
+
+.traits div span.icon.active {
+    border: solid 3px #fff;
+}
+
+.traits div span.icon::before {
+    display: block;
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    opacity: 1;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    transition: all 250ms ease;
+    background: #484848;
+}
+
+
+.traits div span.icon.active::before {
+  opacity: 0;
+  background: #FFF;
+  -webkit-transform: translate(-50%, -50%) scale(1.25);
+  -moz-transform: translate(-50%, -50%) scale(1.25);
+  -ms-transform: translate(-50%, -50%) scale(1.25);
+  -o-transform: translate(-50%, -50%) scale(1.25);
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+
+.icon figure {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 88;
+  -webkit-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+/* 767 min */ 
+@media (min-width: 767px) {
+  .trait {
+    width: calc(50vw - 40px);
+    height: calc(30vh - 24px);
+    min-height: 250px;
+  }
+  
+  .traits {
+    padding: 0px 7%;
+  }
+  
+  .trait-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 247px; 
+    width: 200px;
+  }
+  
+  .trait-container.top-trait {
+    bottom: 0;
+  }
+  
+  .trait-container.bottom-trait{
+    top: 0;
+  }
+
+  .traits div span.icon {
+    width: 128px;
+    height: 128px;
+  }
+
+  .traits div span.icon.active {
+    border: solid 1px #fff;
+  }
+
+  .traits div span.icon::before {
+    width: 128px;
+    height: 128px;   
+  }
+
+  .icon figure {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .traits {
+    padding: 0px 8.33%;
+  }
+  
+  .trait {
+    width: calc(25vw - 20px);
+    height:  calc(25vw - 20px);
+    min-height: 190px;
+  }
+  
+  .trait-container {
+    height: 190px; 
+    width: 166px;
+  }
+  
+  .traits div span.icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .traits div span.icon::before {
+    width: 100px;
+    height: 100px;   
+  }
+
+  .icon figure {
+    height: 50px;
+    width: 50px;
+  }
+  
+}
+
+@media (min-width: 1200px)  {
+  .traits {
+    padding: 0px 5.7%;
+  }
+  
+  .trait {
+    width: calc(25vw - 20px);
+    height:  calc(25vw - 20px);
+    min-height: 250px;
+  }
+  
+  .trait-container {
+    height: 250px; 
+    width: 200px;
+  }
+
+  .traits div span.icon {
+    width: 130px;
+    height: 130px;
+  }
+
+  .traits div span.icon::before {
+    width: 130px;
+    height: 130px;   
+  }
+
+  .icon figure {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+
+/* 1600 min */
+@media (min-width: 1600px) {
+  .traits {
+    height: calc(100vh - 110px);
+  }
+  
+  .trait {
+    width: calc(25vw - 27.5px);
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .trait-container.top-trait {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 260px;
+  }
+  
+  .trait-container.bottom-trait{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 297px;
+    width: 260px;
+  }
+
+  .traits div span.icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .traits div span.icon.active {
+      border: solid 1px #fff;
+  }
+
+  .traits div span.icon::before {
+    width: 150px;
+    height: 150px;   
+  }
+
+  .icon figure {
+    height: 75px;
+    width: 75px;
+  }
+
+}
