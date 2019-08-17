@@ -21,7 +21,6 @@ class Project extends Component {
   handleOffset() {
     let div = document.getElementById(this.props.id);
     let offset = div.offsetHeight / 2;
-    console.log('offset: ', offset);
     this.setState({ offset: offset });
   }
   

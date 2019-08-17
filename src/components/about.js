@@ -34,7 +34,7 @@ class About extends Component {
     let w = window.innerWidth;
     let h = window.innerHeight;
     
-    let borderH = document.getElementsByClassName('top')[0].offsetHeight;
+    let borderH = document.getElementsByClassName('top-border')[0].offsetHeight;
     let slantTop = document.getElementById('slant-top');
     let slantBottom = document.getElementById('slant-bottom');
     let content = document.getElementById('about-content');
@@ -54,7 +54,7 @@ class About extends Component {
     slantBottom.style.height = Math.ceil(offset) + 'px';
 
     let right = document.getElementById('about-right');
-    let traits = document.getElementById('traits');
+    let traits = document.getElementById('traits_section');
     right.style.height = traits.offsetHeight  + 'px';
     works.style.paddingTop = Math.ceil(offset) + 'px';
   }
@@ -72,7 +72,7 @@ class About extends Component {
     if (w > 767) {
       let container = document.getElementById('about-right');
      
-      let traits = document.getElementById('traits');
+      let traits = document.getElementById('traits_section');
       let position = traits.getBoundingClientRect();
       let start = position.top - h;
       

@@ -32,13 +32,22 @@
   background: #F1F1F1;
   padding-top: 60px;
   
+  
   .page-header {
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 40px;
     @media (min-width: 767px) {
-      padding: 0px;
       margin-bottom: 60px;
+    }
+    
+    @media (min-width: 1200px) {
+      margin-bottom: 100px;
+    }
+    
+    @media (min-width: 1600px) {
+      padding-left: 55px;
+      padding-right: 55px;
     }
     
     .about-txt-top, .about-txt-bottom {
@@ -50,6 +59,23 @@
       font-weight: 900;
       height: 84px;
       text-align: center;
+      @media (min-width: 767px) {
+        line-height: 55px;
+        font-size: 72px;
+        height: 91px;
+      }
+      @media (min-width: 1200px) {
+        line-height: 67px;
+        font-size: 90px;
+        height: 103px;
+      }
+      
+      @media (min-width: 1600px) {
+        line-height: 86px;
+        font-size: 116px;
+        height: 122px; 
+      }
+      
     }
     
     .about-txt-top {
@@ -58,13 +84,17 @@
       width: 162.9px;
       
       @media (min-width: 767px) {
-        line-height: 55px;
-        font-size: 72px;
-        font-weight: 900;
-        height: 91px;
         padding: 36px 36px 0px 36px;
         margin-bottom: .4rem;
         width: 177.6px;
+      }
+      @media (min-width: 1200px) {
+        margin-bottom: .5rem;
+        width: 204px;
+      }
+      @media (min-width: 1600px) {
+        margin-bottom: .6rem;
+        width: 242px;
       }
     }
 
@@ -73,12 +103,14 @@
       width: 210.78px;
       
       @media (min-width: 767px) {
-        line-height: 55px;
-        font-size: 72px;
-        font-weight: 900;
-        height: 91px;
         padding: 0px 36px 36px 36px;
         width: 229.8px;
+      }
+      @media (min-width: 1200px) {
+        width: 264px;
+      }
+      @media (min-width: 1600px) {
+        width: 320px;
       }
     }
 
@@ -123,10 +155,22 @@
     }
   }
   
+  #page-bottom {
+    @media (min-width: 767px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media (min-width: 1600px) {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
+  
   #about-left {
     padding: 0px 40px 60px 40px;
     @media (min-width: 767px) {
       padding: 0px;
+      
       p {
         color: #606060;
         font-family: 'Montserrat', sans-serif;
@@ -134,6 +178,24 @@
         margin: 0;
         line-height: 1.6;
         font-size: 14px;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    
+    @media (min-width: 1200px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    
+    @media (min-width: 1600px) {
+      
+      p {
+        line-height: 1.8;
+        font-size: 16px;
       }
     }
   }

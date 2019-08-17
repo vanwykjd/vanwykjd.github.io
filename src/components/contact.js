@@ -11,6 +11,7 @@ class Contact extends Component {
   
   render() {
     const { TextArea } = Input;
+    
     return (
       <div id='contact'>
         <section>
@@ -74,9 +75,9 @@ class Contact extends Component {
                      </Form.Item>
                   </Form>
                 </Col>
-                  </Row>
-                </Col>
               </Row>
+            </Col>
+          </Row>
         </section>
       </div>
     )

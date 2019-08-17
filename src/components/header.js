@@ -25,37 +25,28 @@ class Header extends Component {
     gatsby.classList.add('loaded');
   }
   
-  componentWillUnmount() {
-
-  }
-  
   handleMouseOver() {
     let gatsby = document.getElementById('___gatsby');
-     gatsby.classList.add('menuHover');
-     console.log('hover over');
+    gatsby.classList.add('menuHover');
   }
   
   handleMouseLeave() {
     let gatsby = document.getElementById('___gatsby');
+    
     if (gatsby.classList.contains('menuHover')) {
       gatsby.classList.remove('menuHover');
     }
-    console.log('mouse leave');
   }
   
   handleMenuClick() {
     let gatsby = document.getElementById('___gatsby');
     gatsby.classList.toggle('showMenu');
+    
     if (gatsby.classList.contains('menuHover')) {
       gatsby.classList.remove('menuHover');
     }
- 
-    console.log('click');
   }
-  
-
-
-                                     
+                     
   render() {
     return (
       <header>
